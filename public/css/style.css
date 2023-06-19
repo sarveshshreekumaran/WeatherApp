@@ -1,0 +1,70 @@
+body {
+    background-image: linear-gradient(to right, lightyellow, aliceblue, white, powderblue, lightgray, gray);
+}
+
+.container {
+    text-align: center;
+    width: 320px;
+    height: 480px;
+    margin-top: 5%;
+    border-radius: 2%;
+    animation-name: backColor;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backColor {
+    0% {
+        background-color: lightyellow;
+    }
+
+    20% {
+        background-color: aliceblue;
+    }
+
+    40% {
+        background-color: white;
+    }
+
+    60% {
+        background-color: powderblue;
+    }
+
+    80% {
+        background-color: lightgray;
+    }
+
+    100% {
+        background-color: gray;
+    }
+}
+
+#header {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#search-box {
+    margin-bottom: 15px;
+}
+
+
+#section h2 {
+    margin-bottom: 15px;
+}
+
+#section h3 {
+    margin-bottom: 15px;
+    font-size: xxx-large;
+}
+
+.img-temp img {
+    width: 180px;
+    height: 140px;
+}
+
+@media only screen and (max-width: 320px) {
+    .container {
+        width: 300px;
+    }
+}
