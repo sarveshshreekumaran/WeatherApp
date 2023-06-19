@@ -6,6 +6,7 @@ let https = require("https");
 let bodyParser = require("body-parser");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 
@@ -49,6 +50,6 @@ app.post("/", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("server running on port 3000");
+app.listen(port, () => {
+  console.log(`server running on port ${port}`);
 });
